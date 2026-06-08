@@ -277,22 +277,3 @@
 
 </div>
 
-@push('scripts')
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        if (document.querySelector('#content-editor')) {
-            tinymce.init({
-                selector: '#content-editor',
-                height: 480,
-                menubar: false,
-                plugins: 'lists link table code fullscreen preview wordcount',
-                toolbar: 'undo redo | blocks | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist | link table | code fullscreen preview',
-                branding: false,
-                promotion: false
-            });
-        }
-    });
-</script>
-@endpush
