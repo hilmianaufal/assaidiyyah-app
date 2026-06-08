@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@keyframes teacher-marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.teacher-marquee {
+    animation: teacher-marquee 28s linear infinite;
+}
+
+.teacher-marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes testimonial-marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.testimonial-marquee {
+    animation: testimonial-marquee 25s linear infinite;
+}
+
+.testimonial-marquee:hover {
+    animation-play-state: paused;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+.js-menu-item {
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.js-menu-item:hover {
+    transform: translateX(6px);
+}
+
+.js-menu-item iconify-icon {
+    transition: all .3s ease;
+}
+
+.js-menu-item:hover iconify-icon {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.js-menu-item {
+    animation-fill-mode: both;
+}
+
+.js-menu-item:hover span:first-child {
+    transform: scale(1.08) rotate(-3deg);
+}
