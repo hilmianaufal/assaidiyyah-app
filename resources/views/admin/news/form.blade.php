@@ -40,11 +40,7 @@
                 📖 Isi Berita
             </label>
 
-            <textarea id="content-editor"
-                      name="content"
-                      rows="16"
-                      class="w-full rounded-2xl border-slate-200 bg-slate-50 px-5 py-4 font-medium leading-relaxed focus:border-blue-500 focus:ring-blue-500"
-                      required>{{ old('content', $news?->content) }}</textarea>
+            <textarea name="content" class="tinymce">{{ old('content', $news->content ?? '') }}</textarea>
 
             @error('content')
                 <p class="mt-2 text-sm font-semibold text-red-600">⚠️ {{ $message }}</p>

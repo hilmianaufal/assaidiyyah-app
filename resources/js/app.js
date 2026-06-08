@@ -4,6 +4,34 @@ import Alpine from 'alpinejs';
 
 window.Alpine = Alpine;
 
+import tinymce from 'tinymce/tinymce';
+
+import 'tinymce/icons/default';
+import 'tinymce/themes/silver';
+import 'tinymce/models/dom';
+
+import 'tinymce/skins/ui/oxide/skin.min.css';
+import 'tinymce/skins/content/default/content.min.css';
+import 'tinymce/skins/content/default/content.css';
+
+// plugins yang dipakai
+import 'tinymce/plugins/link';
+import 'tinymce/plugins/lists';
+import 'tinymce/plugins/image';
+import 'tinymce/plugins/table';
+import 'tinymce/plugins/code';
+
+document.addEventListener('DOMContentLoaded', () => {
+    tinymce.init({
+        selector: '.tinymce',
+        plugins: 'link lists image table code',
+        toolbar: 'undo redo | bold italic | bullist numlist | link image table | code',
+        height: 400,
+        skin: false,
+        content_css: false,
+    });
+});
+
 Alpine.start();
 document.addEventListener('DOMContentLoaded', () => {
     gsap.fromTo(
