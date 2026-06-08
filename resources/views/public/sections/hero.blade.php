@@ -1,5 +1,4 @@
-<section class="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-950 via-blue-800 to-cyan-700 px-4 pb-20 pt-32">
-
+<section class="relative -mt-0 min-h-screen w-full overflow-hidden bg-gradient-to-br from-blue-950 via-blue-800 to-cyan-700 px-4 pb-20 pt-32 text-white">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,.25),_transparent_35%)]"></div>
     <div class="absolute -right-24 top-28 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl"></div>
     <div class="absolute -left-24 bottom-12 h-80 w-80 rounded-full bg-blue-300/20 blur-3xl"></div>
